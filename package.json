@@ -1,0 +1,29 @@
+{
+  "name": "get-next",
+  "version": "0.0.1",
+  "description": "Simple http GET wrapper with chainable calls.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run tap",
+    "lint": "jshint index.js test/",
+    "tap": "NODE_ENV=development tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bucaran/get-next"
+  },
+  "keywords": [
+    "get",
+    "http"
+  ],
+  "author": "Jorge Bucaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucaran/get-next/issues"
+  },
+  "homepage": "https://github.com/bucaran/get-next",
+  "dependencies": {
+    "jshint": "^2.6.3",
+    "tap": "^0.7.1"
+  }
+}
