@@ -1,7 +1,11 @@
 [![Build Status][TravisLogo]][Travis]
 
-# get-next
+# _get-next_
 > Simple http GET wrapper with chainable calls.
+
+<p align="center">
+<img src="https://cloud.githubusercontent.com/assets/8317250/6853848/cfe67340-d430-11e4-8be0-56976fd1ccd3.png">
+</img>
 
 ## Install
 
@@ -21,7 +25,7 @@ var failure = function(error) {};
 
 get(options)
   .next(success, fail)
-  .next(success, fail))
+  .next(success, fail)
   ...
   .finally(handler);
 
