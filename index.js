@@ -14,16 +14,19 @@ module.exports = function(options, protocol) {
 
   // Use specified protocol or guess from options. Default will be http.
   var getProtocol = function(protocol) {
+    // Cache http modules to support browserify static-only modules.
+    var http = require("http"), https = require("https");
+
     if (typeof (protocol) === "function") return protocol();
 
     if (options.protocol === "https" ||
-        options.port === 443 || options.https) {
-      protocol = "https";
+      options.port === 443 || options.https) {
+      return https;
     } else {
       protocol = protocol || options.protocol || "http";
     }
 
-    return require(protocol);
+    return protocol === "http" ? http : require(protocol);
   };
 
   return {
