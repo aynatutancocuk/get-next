@@ -71,6 +71,8 @@ get(opts).next(function (data, resp) {
 });
 ```
 
+### Browserify
+
 You can use [browserify](htt) to make it work on the browser too.
 
 ```fish
