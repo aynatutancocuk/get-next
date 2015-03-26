@@ -73,7 +73,7 @@ get(opts).next(function (data, resp) {
 
 ### Browserify
 
-You can use [browserify](htt) to make it work in the browser too.
+You can use [browserify](http://browserify.org) to make it work in the browser too.
 
 ```fish
 browserify index.js -o index.bundle.js
